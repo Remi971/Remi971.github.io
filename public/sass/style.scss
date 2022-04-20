@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@400;700&display=swap');
+
+@import 'variables/colors';
+
+@import 'components/button';
+@import 'components/header';
+@import 'components/switch';
+@import 'components/home';
+@import 'components/projects';
+@import 'components/contact';
+@import 'components/menu';
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'K2D', sans-serif;
+}
+
+body {
+
+    height: 100vh;
+    background: linear-gradient(0deg, var(--body-bg_down) 0%, var(--body-bg_up) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: var(--text);
+    transition: all ease .4s;
+
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    
+}
+

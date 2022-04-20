@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+</head>
+<body>
+    <section id="menu">
+        <div class="menu_container">
+            <h3>Select language</h3>
+            <label class="switch">
+                <input id="darkMode" type="checkbox" >
+                <span class="slider">
+                    <img src="./assets/bulb.svg" alt="light Mode" width="26px">
+                    <img src="./assets/moon.svg" alt=" dark Mode" width="26px">
+                </span>
+            </label>
+            <ul>
+                <li>Home</li>
+                <li>Project</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </section>
+    <header>
+        <div class="header">
+            <div class="h_title">
+                <h3>Portfolio</h3>
+            </div>
+            
+            <div class="h_menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <section id="home">
+        <div class="photo">
+            <img src="./assets/photo.jpg" alt="photo">
+        </div>
+        <h4>Hi, I'm <span>Rémi</span><br>I'm a Fullstack Developer</h4>
+        <button class="btn" id="test">My projects</button>
+    </section>
+    <section id="projects">
+        <div class="card">
+            <div class="card_image">
+                <img src="./assets/illustration1.png" alt="project1">
+                <div class="info">
+                    <p>Last project made for openclassrooms. Social Network Application for a fictive company Groupomania</p>
+                </div>
+            </div>
+            <div class="card_description">
+                <h3><i class="fal fa-chart-network"></i>Social Network</h3>
+                <ul>
+                    <li>- React.js</li>
+                    <li>- Styled Component</li>
+                    <li>- Node.js (Express.js and Sequelize)</li>
+                    <li>- MySQL</li>
+                </ul>
+                <button class="btn">Live Demo</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card_image">
+                <img src="./assets/quoteApp1.png" alt="project2">
+                <div class="info">
+                    <p>Project from FreeCodeCamp, generate random quote from an API.</p>
+                </div>
+            </div>
+            <div class="card_description">
+                <h3>Random Quote Machine</h3>
+                <ul>
+                    <li>- React.js</li>
+                    <li>- Sass</li>
+                </ul>
+                <button class="btn">Live Demo</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card_image">
+                <img src="./assets/scatter plot.png" alt="project3">
+                <div class="info">
+                    <p>Project from FreecodeCamp, Graph developped from an API, with D3.js</p>
+                </div>
+            </div>
+            <div class="card_description">
+                <h3>Scatterplot Graph D3.js</h3>
+                <ul>
+                    <li>- D3.js</li>
+                </ul>
+                <button class="btn">Live Demo</button>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <form 
+        action="https://formspree.io/f/xoqrkrwv"
+        method="POST"
+        >
+            <label for="name">
+                <p>Your name :</p>
+                <input type="text" id="name" required>
+            </label>
+            <label for="email">
+                <p>Your email :</p>
+                <input type="email" id="email" required>
+            </label>
+            <label for="message">
+                <p>Let me a message :</p>
+                <textarea name="message" id="message" required></textarea>
+            </label>
+            <button type="submit" class="btn">Send</button>
+        </form>
+    </section>
+        
+
+    <script src="script.js"></script>
+</body>
+</html>

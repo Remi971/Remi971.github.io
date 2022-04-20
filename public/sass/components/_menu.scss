@@ -1,0 +1,34 @@
+section#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100vw;
+    color: var(--text);
+    z-index: 3;
+    .menu_container {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+        background: var(--primary);
+        width: 100%;
+        height: 100%;
+        right: -100vw;
+        //transform: translateX(100vw);
+        transition: all ease .4s;
+        //animation: appearence .4s;
+        &.active {
+            transform: translateX(0);
+            right: 0;
+        }
+
+    }
+}
+
+@keyframes appearence {
+    from {
+        width: 0;
+    }
+}

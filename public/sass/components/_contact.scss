@@ -1,0 +1,34 @@
+section#contact {
+    margin-top : 2rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+        label {
+            padding: 10px;
+            width: 80%;
+            p {
+                margin-bottom: 10px;
+            }
+            input, textarea {
+                padding: 10px;
+                border-radius: 10px;
+                width: 100%;
+                border: none;
+                &:focus {
+                    outline: 1px solid var(--green);
+                }
+            }
+            textarea {
+                resize: vertical;
+                min-height: 3rem;
+            }
+        }
+    }
+}
