@@ -6,12 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./public/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Portfolio</title>
+    <title translate="no">Portfolio</title>
 </head>
 <body>
     <section id="menu">
         <div class="menu_container">
-            <h3>Select language</h3>
+            <!-- <div id="google_translate_element"></div>
+            <script type="text/javascript">
+                function googleTranslateElementInit() {
+                  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'fr', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');
+                }
+                </script>
+                
+                <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
+            <h5>Change to <span class="mode">Dark</span> mode</h5>
             <label class="switch">
                 <input id="darkMode" type="checkbox" >
                 <span class="slider">
@@ -29,21 +37,31 @@
     <header>
         <div class="header">
             <div class="h_title">
-                <h3>Portfolio</h3>
+                <h3 translate="no">Portfolio</h3>
             </div>
-            
-            <div class="h_menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <nav class="active">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="menu_container">
+                    <div class="h_menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </nav>
         </div>
     </header>
     <section id="home">
-        <div class="photo">
-            <img src="./assets/photo.jpg" alt="photo">
+        <div class="photo_container">
+            <div class="photo">
+                <img src="./assets/photo.jpg" alt="photo">
+            </div>
         </div>
-        <h4>Hi, I'm <span>Rémi</span><br>I'm a Fullstack Developer</h4>
+        <h4>Hi, I'm <span>Rémi</span>.<br>I'm a Frontend developer</h4>
         <button class="btn" id="test">My projects</button>
     </section>
     <section id="projects">
@@ -69,7 +87,7 @@
             <div class="card_image">
                 <img src="./assets/quoteApp1.png" alt="project2">
                 <div class="info">
-                    <p>Project from FreeCodeCamp, generate random quote from an API.</p>
+                    <p>Project from FreeCodeCamp, generate random quotes from an API.</p>
                 </div>
             </div>
             <div class="card_description">

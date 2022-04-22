@@ -9,12 +9,17 @@
 @import 'components/projects';
 @import 'components/contact';
 @import 'components/menu';
+@import 'components/navbar';
 
 * {
     margin: 0;
     padding: 0;
     font-family: 'K2D', sans-serif;
 }
+//Hide the google translate bar
+// .goog-te-banner-frame.skiptranslate {
+//     display: none !important;
+// } 
 
 body {
 
@@ -24,7 +29,7 @@ body {
     background-attachment: fixed;
     color: var(--text);
     transition: all ease .4s;
-
+    // top: 0px !important;//Hide the google translate bar
     section {
         display: flex;
         flex-direction: column;

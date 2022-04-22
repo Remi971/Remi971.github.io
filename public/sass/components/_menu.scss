@@ -5,7 +5,11 @@ section#menu {
     height: 100%;
     width: 100vw;
     color: var(--text);
+    visibility: hidden;
     z-index: 3;
+    &.active {
+        visibility: visible;
+    }
     .menu_container {
         position: absolute;
         display: flex;
@@ -22,6 +26,13 @@ section#menu {
         &.active {
             transform: translateX(0);
             right: 0;
+        }
+        h5 {
+            margin: .5rem;
+        }
+        ul {
+            margin: 1rem;
+            list-style-type: none;
         }
 
     }
