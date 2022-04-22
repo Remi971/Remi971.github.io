@@ -660,7 +660,6 @@ nav .menu_container .h_menu.active span:nth-child(3n) {
 
 body {
   min-width: 250px;
-  height: 100vh;
   background: -webkit-gradient(linear, left bottom, left top, from(var(--body-bg_down)), to(var(--body-bg_up)));
   background: linear-gradient(0deg, var(--body-bg_down) 0%, var(--body-bg_up) 100%);
   background-repeat: no-repeat;
