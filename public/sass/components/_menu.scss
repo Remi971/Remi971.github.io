@@ -33,6 +33,32 @@ section#menu {
         ul {
             margin: 1rem;
             list-style-type: none;
+            li {
+                font-size: 2rem;
+                margin: 2rem;
+                a{
+                    position: relative;
+                    text-decoration: none;
+                    padding: 5px;
+                    &:visited {
+                        color: var(--text);
+                    }
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        height: 100%;
+                        width: 0;
+                        border-bottom: 3px solid var(--green);
+                        transition: all .4s linear;
+                    }
+                    &:hover {
+                        color: var(--green);
+                        &::before {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
         }
 
     }

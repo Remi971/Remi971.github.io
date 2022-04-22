@@ -15,7 +15,7 @@
     input:focus + .slider {
         box-shadow: 0 0 1px var(--green);
     }
-    input:checked + .slider:before {
+    input:checked + .slider.dark:before {
         transform: translateX(26px);
     }
     span {
