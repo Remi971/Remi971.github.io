@@ -47,6 +47,21 @@ header {
   -webkit-backdrop-filter: blur(20px) grayscale(50%);
           backdrop-filter: blur(20px) grayscale(50%);
   background: var(--card);
+  height: 80px;
+}
+
+@media (min-width: 800px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .header {
+    width: 80%;
+  }
 }
 
 header .header {
@@ -61,6 +76,8 @@ header .header {
       -ms-flex-align: center;
           align-items: center;
   padding: .8rem;
+  -webkit-transition: width 0.6s linear;
+  transition: width 0.6s linear;
 }
 
 @-webkit-keyframes apparition {
@@ -614,6 +631,10 @@ body {
   color: var(--text);
   -webkit-transition: all ease .4s;
   transition: all ease .4s;
+  overflow-y: scroll;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  scroll-padding: 80px;
 }
 
 body section {
@@ -627,5 +648,6 @@ body section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  scroll-snap-align: start;
 }
 /*# sourceMappingURL=style.css.map */

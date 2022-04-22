@@ -7,12 +7,22 @@ header {
     border-bottom: var(--green) solid 1px;
     backdrop-filter: blur(20px) grayscale(50%);
     background: var(--card);
+    height: 80px;
+    
+    @media (min-width: 800px) {
+        display: flex;
+        justify-content: center;
+        .header {
+            width: 80%;
+        }
+    }
     .header{
         position: relative;
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: .8rem;
+        transition: width 0.6s linear;
         //transition: all ease .4s;
     }
 }
