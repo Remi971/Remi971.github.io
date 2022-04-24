@@ -693,7 +693,7 @@ footer .social_network a {
   margin: 1rem;
 }
 
-footer .social_network a:visited {
+footer .social_network a:visited, footer .social_network a:active {
   color: var(--primary);
 }
 
@@ -705,8 +705,6 @@ footer .social_network a i {
 
 footer .social_network a i:hover {
   color: var(--green);
-  -webkit-box-shadow: 2px 2px 5px var(--primary);
-          box-shadow: 2px 2px 5px var(--primary);
 }
 
 * {

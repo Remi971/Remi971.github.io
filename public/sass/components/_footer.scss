@@ -14,7 +14,7 @@ footer {
         a {
             text-decoration: none;
             margin: 1rem;
-            &:visited {
+            &:visited, &:active {
                 color: var(--primary)
             }
             i {
@@ -22,7 +22,6 @@ footer {
                 transition: color .4s linear;
                 &:hover {
                     color: var(--green);
-                    box-shadow: 2px 2px 5px var(--primary);
                 }
             }
         }
