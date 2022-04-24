@@ -2,7 +2,12 @@ section#contact {
     margin-top : 2rem;
     padding: 1rem;
     display: flex;
-    justify-content: center;;
+    justify-content: center;
+    
+
+    h2 {
+        margin: 1rem;
+    }
 
     form {
         display: flex;
@@ -10,6 +15,9 @@ section#contact {
         align-items: center;
         gap: 1rem;
         width: 100%;
+        max-width: 650px;
+        margin: 2rem 0 4rem 0;
+
         label {
             padding: 10px;
             width: 80%;

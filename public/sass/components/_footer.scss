@@ -1,0 +1,31 @@
+footer {
+    background-color: var(--text);
+    color: var(--primary);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .social_network {
+        display: flex;
+        justify-content: center;
+
+        a {
+            text-decoration: none;
+            margin: 1rem;
+            &:visited {
+                color: var(--primary)
+            }
+            i {
+                font-size: 1.2rem;
+                transition: color .4s linear;
+                &:hover {
+                    color: var(--green);
+                    box-shadow: 2px 2px 5px var(--primary);
+                }
+            }
+        }
+    }
+
+}

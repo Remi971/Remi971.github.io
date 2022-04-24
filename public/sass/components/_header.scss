@@ -6,12 +6,11 @@ header {
     width: 100%;
     min-width: 250px;
     z-index: 4;
-    border-bottom: var(--green) solid 1px;
-    backdrop-filter: blur(20px) grayscale(50%);
-    background: var(--card);
+    box-shadow: 0px 1px 5px 1px black;
+    // backdrop-filter: blur(20px) grayscale(50%);
+    background-color: var(--primary);
     height: 80px;
     transition: width .6s linear;
-    
     .header{
         position: relative;
         width: 100%;
@@ -33,12 +32,3 @@ header {
     }
 }
 
-@keyframes apparition {
-    from {
-        top: -80px;
-    }
-    to {
-        top: 0;
-    }
-
-}
